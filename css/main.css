@@ -1726,6 +1726,12 @@ pre .javascript .function {
   box-shadow: inset 0 2px 6px #000;
   background: #222;
   -webkit-transform: translateZ(0);
+/*+tablet() {
+    hide() if not hexo-config('sidebar.onmobile');
+  }
+  +mobile() {
+    hide() if not hexo-config('sidebar.onmobile');
+  }*/
 }
 .sidebar a {
   color: #999;
@@ -1733,16 +1739,6 @@ pre .javascript .function {
 }
 .sidebar a:hover {
   color: #eee;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .sidebar {
-    display: none !important;
-  }
-}
-@media (max-width: 767px) {
-  .sidebar {
-    display: none !important;
-  }
 }
 .sidebar-inner {
   position: relative;
@@ -1769,16 +1765,14 @@ pre .javascript .function {
   z-index: 1050;
   cursor: pointer;
   -webkit-transform: translateZ(0);
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .sidebar-toggle {
-    display: none !important;
+/*+tablet() {
+    fixbutton() if hexo-config('sidebar.onmobile');
+    hide() if not hexo-config('sidebar.onmobile');
   }
-}
-@media (max-width: 767px) {
-  .sidebar-toggle {
-    display: none !important;
-  }
+  +mobile() {
+    fixbutton() if hexo-config('sidebar.onmobile');
+    hide() if not hexo-config('sidebar.onmobile');
+  }*/
 }
 .sidebar-toggle-line {
   position: relative;
@@ -1992,7 +1986,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #474e4a;
+  background: #ff82ff;
 }
 .links-of-blogroll {
   font-size: 13px;

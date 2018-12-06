@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-26T10:21:09.041Z</updated>
+  <updated>2018-12-05T08:49:00.942Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博文书写工具及书写步骤详解</title>
+    <link href="http://yoursite.com/2018/12/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+    <id>http://yoursite.com/2018/12/05/我的第二篇文章/</id>
+    <published>2018-12-05T08:34:42.934Z</published>
+    <updated>2018-12-05T08:49:00.942Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://pimv9an6u.bkt.clouddn.com/background02.jpg" width="100%"><br><a id="more"></a></p><p>欢迎使用 <strong>{小书匠}(xiaoshujiang)编辑器</strong>，您可以通过 <code>小书匠主按钮&gt;模板</code> 里的模板管理来改变新建文章的内容。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://pimv9an6u.bkt.clouddn.com/background02.jpg&quot; width=&quot;100%&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="博客写作" scheme="http://yoursite.com/categories/%E5%8D%9A%E5%AE%A2%E5%86%99%E4%BD%9C/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>使用 Hexo + NexT 搭建个人博客的详细步骤</title>
