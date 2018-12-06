@@ -3,11 +3,11 @@
   <title>爱健身的程序猿</title>
   
   
-  <link href="/hexo/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.ShawnandJane.top/"/>
+  <link href="http://www.yoursite.com/"/>
   <updated>2018-11-26T10:21:09.041Z</updated>
-  <id>http://www.ShawnandJane.top/</id>
+  <id>http://www.yoursite.com/</id>
   
   <author>
     <name>Shawn_Huang</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>使用 Hexo + NexT 搭建个人博客的详细步骤</title>
-    <link href="http://www.ShawnandJane.top/2018/11/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-    <id>http://www.ShawnandJane.top/2018/11/26/我的第一篇文章/</id>
+    <link href="http://www.yoursite.com/2018/11/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+    <id>http://www.yoursite.com/2018/11/26/我的第一篇文章/</id>
     <published>2018-11-26T10:21:09.000Z</published>
     <updated>2018-11-26T10:21:09.041Z</updated>
     
@@ -31,7 +31,7 @@
     
     </summary>
     
-      <category term="博客搭建" scheme="http://www.ShawnandJane.top/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+      <category term="博客搭建" scheme="http://www.yoursite.com/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
   </entry>
