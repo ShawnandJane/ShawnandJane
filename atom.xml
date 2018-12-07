@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yoursite.com/"/>
-  <updated>2018-11-26T10:21:09.041Z</updated>
+  <updated>2018-12-07T10:15:32.374Z</updated>
   <id>http://www.yoursite.com/</id>
   
   <author>
@@ -17,9 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>博文书写工具及书写步骤详解</title>
+    <link href="http://www.yoursite.com/2018/12/07/mysecondarticle/"/>
+    <id>http://www.yoursite.com/2018/12/07/mysecondarticle/</id>
+    <published>2018-12-07T10:15:32.000Z</published>
+    <updated>2018-12-07T10:15:32.374Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://pimv9an6u.bkt.clouddn.com/background02.jpg" width="100%"><br><a id="more"></a></p><h3 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h3><p>在上一篇文章中，我仔细讲述了使用 <strong>Hexo + NexT</strong> 搭建个人博客的步骤和方法(详情点击<a href="https://www.shawnandjane.top/2018/11/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" target="_blank" rel="noopener"><strong>这里</strong></a>），接下来我将介绍如何撰写及发表我们的博文，OK，下面开始进入正题。</p><h3 id="Markdown编辑器"><a href="#Markdown编辑器" class="headerlink" title="Markdown编辑器"></a>Markdown编辑器</h3><p><strong>Hexo</strong>下所写博文的文件类型都是<strong>Markdown</strong>文件，因此在写博文之前，我们先要做的一件事就是选择一款<strong>Markdown编辑器</strong>。当然，有各种各样的编辑器供你选择，我在网上找了一篇专门介绍这个的，详情点击<a href="https://www.williamlong.info/archives/4319.html" target="_blank" rel="noopener"><strong>这里</strong></a>。</p><p>我个人选择的是小书匠，它有三个优点最吸引我：</p><ol><li>在写博文时，可以实时预览页面效果(不过提醒下，预览的排版效果与实际的还是有差别的)：<br><img src="http://pimv9an6u.bkt.clouddn.com/%E9%A2%84%E8%A7%88.png" alt="预览图"></li><li>这款编辑器里自带一篇文章介绍 Markdown语法，现学现用。</li><li>功能齐全，使用方便，所有写的文章都会在左侧显示，方便随时修改博文。</li></ol><p>如果你也选择使用这款编辑器的话，点击<a href="http://soft.xiaoshujiang.com/download.html" target="_blank" rel="noopener"><strong>这里</strong></a>下载安装即可。</p><h3 id="七牛云"><a href="#七牛云" class="headerlink" title="七牛云"></a>七牛云</h3><p>写博文的时候总会用到图片，但是我们总不能将所有图片都放在自己电脑，然后通过指定路径上传到博客里。万一电脑出问题了，那相当于之前写的博文插入的图片都失效了。</p><p>因此把图片托管在某个网络服务商是个不错的选择，这里我选择的是<a href="https://www.qiniu.com/?hmsr=baidu&amp;hmpl=SEM&amp;hmcu=pinzhuan_title&amp;hmkw=&amp;hmci=" target="_blank" rel="noopener"><strong>七牛云</strong></a>。如果你也是选的这个，先去注册，然后登录你的账号。</p><p>先点击管理控制台：<br><img src="http://pimv9an6u.bkt.clouddn.com/%E4%B8%83%E7%89%9B%E4%BA%9101.png" alt="七牛云01"><br>在跳转出的页面左侧栏中点击对象存储，点击内容管理，点击上传文件：<br><img src="http://pimv9an6u.bkt.clouddn.com/%E4%B8%83%E7%89%9B%E4%BA%9102.png" alt="七牛云02"><br>然后选择文件上传后点击关闭，这时会发现上传的图片相关信息已经显示出来了，这时候我们就要复制这个图片所在链接，点击红圈所示省略号，然后点击复制外链，这样就可以在博文中插入这个图片链接了：<br><img src="http://pimv9an6u.bkt.clouddn.com/%E4%B8%83%E7%89%9B%E4%BA%9103.png" alt="七牛云03"></p><h3 id="博文写作与发表"><a href="#博文写作与发表" class="headerlink" title="博文写作与发表"></a>博文写作与发表</h3><p>上面两步都搞定后，接下来就开始写博文了。在终端输入命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new a</span><br></pre></td></tr></table></figure></p><p>  注意这里的 <strong>a</strong> 指的是文章标题。</p><p><strong>在此之前</strong>，先要清楚的一点是，一般我们的写作习惯都是先以草稿形式写文章，待回头修改细节后才发布出去。但是，<strong>Hexo</strong>默认使用该命令后生成的文件自动放在形如 H:\Hexo\source\_posts 内，这里的 post 即表示发表的文章之意。</p><p>为了符合我们的写作习惯，我们可以把生成的文章先放在”草稿箱“内，这里就得新建一个<strong>draft</strong>文件夹，路径形如： H:\Hexo\source\_drafts。这样我们的博客网站看不到草稿文件。</p><p>然后，修改站点配置文件中的：<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">default_layout:</span> <span class="string">post</span></span><br></pre></td></tr></table></figure></p><p>  把 post 改为 draft，这样使用 <strong>hexo new a</strong> 生成的文章默认放在草稿箱内。<br>  在<strong>draft</strong>文件夹内找到该文件，右击滑到打开方式那，选择小书匠，打开后，默认是以下内容：<br>  <img src="http://pimv9an6u.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A001.png" alt="小书匠01"><br>  但是如果你没有设置文章标签(点击<a href="https://github.com/iissnan/hexo-theme-next/wiki/%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE%E4%BA%91%E9%A1%B5%E9%9D%A2" target="_blank" rel="noopener"><strong>这里</strong></a>了解标签设置详情)，比如我只有文章分类，另外，我不想让文章内容全部显示出来，只想放一张图片，你可以像我这样设置：<br>  <img src="http://pimv9an6u.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A002.jpg" alt="小书匠03"><br>  实际效果如下图所示：<br>  <img src="http://pimv9an6u.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A005.jpg" alt="小书匠04"><br>  OK，剩下的问题主要就是写文章时涉及到的<strong>Markdown语法</strong>了，前面提到小书匠有相关语法使用手册，多看多学即可。</p><p>  当你在编辑文章的时候想看文章的实际效果怎么办？输入以下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s --draft</span><br></pre></td></tr></table></figure></p><p>  这样即可在本地预览实际效果了。</p><p>  下一步，当你写完修改好后，输入以下命令发布该文章：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo punlish a</span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></p><p>  你会发现 _drafts 里的 a.md 不见了，跑到了 _posts 里面,也就说明你的草稿发布成功了。OK，到此为止，整个过程就结束了，登录你的域名欣赏自己写的文章吧，Enjoy it！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://pimv9an6u.bkt.clouddn.com/background02.jpg&quot; width=&quot;100%&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="博客写作" scheme="http://www.yoursite.com/categories/%E5%8D%9A%E5%AE%A2%E5%86%99%E4%BD%9C/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>使用 Hexo + NexT 搭建个人博客的详细步骤</title>
-    <link href="http://www.yoursite.com/2018/11/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-    <id>http://www.yoursite.com/2018/11/26/我的第一篇文章/</id>
+    <link href="http://www.yoursite.com/2018/11/26/myfirstarticle/"/>
+    <id>http://www.yoursite.com/2018/11/26/myfirstarticle/</id>
     <published>2018-11-26T10:21:09.000Z</published>
     <updated>2018-11-26T10:21:09.041Z</updated>
     
